@@ -95,7 +95,9 @@ Nota: El input() recibe un string, por lo que debes convertirlo a entero.
 # area_trian = (base * altura) / 2
 # print("El area del triangulo es: ", int(area_trian))
 
-lado1 = int(input("Ingrese el valor del primer lado del triangulo"))
-lado2 = int(input("Ingrese el valor del segundo lado del triangulo"))
-lado3 = int(("Ingrese el valor del tercer lado del triangulo"))
+# lado1 = int(input("Ingrese el valor del primer lado del triangulo: "))
+# lado2 = int(input("Ingrese el valor del segundo lado del triangulo: "))
+# lado3 = int(input("Ingrese el valor del tercer lado del triangulo: "))
+# perimetro = lado1 + lado2 + lado3
+# print("El perimetro del triangulo es: ", perimetro) # 23
 
