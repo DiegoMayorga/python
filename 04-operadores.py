@@ -101,3 +101,22 @@ Nota: El input() recibe un string, por lo que debes convertirlo a entero.
 # perimetro = lado1 + lado2 + lado3
 # print("El perimetro del triangulo es: ", perimetro) # 23
 
+# 6. Obten ancho y alto de un rectángulo mediante el usuario y calcula su área y perímetro (area = ancho * alto, perímetro = 2 * (ancho + alto))
+
+# ancho = int(input("Ingrese el ancho de su rectangulo: "))
+# alto = int(input("Ingrese el valor del alto de su rectangulo: "))
+# arearec = ancho * alto
+# perim = (ancho*2) + (alto*2)
+# print("El area de su rectangulo es: ", arearec, " y su perimetro es: ", perim)
+
+# pi = 3.14
+
+# 8. Halla el tamaño de la palabra "Python" y "Dragón" y genera una comparación falsa con ambos valores.
+palabra1 = "Python"
+palabra2 = "Dragon"
+n1 = len(palabra1)
+n2 = len(palabra2)
+print(f"La cantidad de caracteres de la palabra 1 es: {n1} ")
+print(f"La cantidad de caracteres de la palabra 2 es: {n2} ")
+comp = n1 != n2
+print(comp)
