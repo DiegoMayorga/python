@@ -29,7 +29,7 @@ Este repositorio contiene una guía paso a paso para aprender los conceptos bás
 
 ## ¿Cómo usar este repositorio?
 
-1. Abre cada carpeta en orden.
+1. Abre cada archivo en orden.
 2. Lee los comentarios en los archivos `.py`.
 3. Ejecuta los ejemplos y modifica el código para practicar.
 
