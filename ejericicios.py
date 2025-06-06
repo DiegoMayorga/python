@@ -141,11 +141,36 @@ Crear una función que reciba un diccionario y retorne si el estudiante aprobó 
 
 """ Crea una función arbol que no reciba parámetros y muestre la figura anterior. """
 # def arbol():
-# e = 6
-# for p in range(1, 14, 2):
+#   e = 6
+#   for p in range(1, 14, 2):
 # esp = " " * e
 # car = "#" * p
 # print(esp + car)
 # e = e - 1
 
 # arbol()
+
+"""
+1 x 1 = 1
+2 x 2 = 4
+3 x 3 = 9
+4 x 4 = 16
+5 x 5 = 25
+6 x 6 = 36
+7 x 7 = 49
+8 x 8 = 64
+9 x 9 = 81
+10 x 10 = 100
+"""
+# for i in range(1, 11):
+# res = i * i
+# print(i, "*", i, "=", res)
+
+# f"{valor1} + {valor2}"
+
+# e = 6
+# for i in range(1, 14, 2): # 1 3 5 7 9 11 13
+#   esp = " " * e
+#   car = "#" * i
+#   print(esp + car)
+#   e = e - 1
