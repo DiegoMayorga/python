@@ -162,17 +162,40 @@ Diccionarios:
 
 """ Anagrama """
 # Crear una función llamada is_anagram que reciba dos parámetros (dos palabras) y retorne True o False según si es anagrama o no.
-def is_anagram(pal1, pal2):
-    if len(pal1) != len(pal2):
-        return False
-    org1 = sorted(pal1)
-    org2 = sorted(pal2)
-    if org1 == org2:
-        return True
-    else:
-        return False
-print(is_anagram("roma","tres"))
-    
+# def is_anagram(pal1, pal2):
+# if len(pal1) != len(pal2):
+# return False
+# org1 = sorted(pal1)
+# org2 = sorted(pal2)
+# if org1 == org2:
+# return True
+# else:
+# return False
+
+# print(is_anagram("roma","tres"))
+
 
 # texto = "python"
 # ordenado = sorted(texto)
+
+# sorted(lista, reverse=True)
+
+""" Crear una función llamada distancia_entre que reciba una lista como parámetro y retorne la distancia entre el primer y último elemento de la lista. """
+# La lista debe ser ordenada en la función.
+# [1, 5, 7, -5, -3, -4]
+# ["-5", "-8", 8, 4, 2]
+# def distancia_entre(lista):
+    # new = []
+    # for i in lista:
+        # if type(i) != type(1):
+            # new.append(int(i))
+        # else:
+            # new.append(i)
+    # ord = sorted(new)
+    # dist = ord[-1] - ord[0]
+    # return dist
+
+# b = ["-5", "-50", 8, -10, 2]
+# print(distancia_entre(b))
+
+
