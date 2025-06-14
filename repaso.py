@@ -185,17 +185,55 @@ Diccionarios:
 # [1, 5, 7, -5, -3, -4]
 # ["-5", "-8", 8, 4, 2]
 # def distancia_entre(lista):
-    # new = []
-    # for i in lista:
-        # if type(i) != type(1):
-            # new.append(int(i))
-        # else:
-            # new.append(i)
-    # ord = sorted(new)
-    # dist = ord[-1] - ord[0]
-    # return dist
+# new = []
+# for i in lista:
+# if type(i) != type(1):
+# new.append(int(i))
+# else:
+# new.append(i)
+# ord = sorted(new)
+# dist = ord[-1] - ord[0]
+# return dist
 
 # b = ["-5", "-50", 8, -10, 2]
 # print(distancia_entre(b))
 
+""" Split, join """
+
+# frase = "Hola Python, este es un ejemplo"
+# frase2 = "Hola%Mundo%Python"
+# print(frase.split(","))
+# dividir_palabra = frase2.split("%")
+# print(",".join(dividir_palabra))
+
+# lst = [1, 5, 6, 2, 4]
+# print(sorted(lst))
+
+# Tomar un string con números y convertirla a una fecha con esta estructura: DD/MM/YYYY
+# fecha1 = "2018*05*12" 05 de diciembre de 2018
+# fecha2 = "hola+mundo/15.02.2018" 15 de febrero de 2018
+# fecha3 = "2018.02.15-mundo*hola" 15 de febrero de 2018
+# fecha1 = "2018*05*12"
+# data = fecha1.split("*")
+# data1 = []
+# data1.append(data[1])
+# data1.append(data[2])
+# data1.append(data[0])
+# print("/".join(data1))
+# fecha2 = "hola+mundo/15.02.2018"
+# data = fecha2.split("/")
+# data1 = []
+# data1.append(data[1])
+# fecha = "".join(data1)
+# data1 = fecha.split(".")
+# print("/".join(data1))
+
+# fecha3 = "2018.02.15-mundo*hola"
+# data = fecha3.split("-")
+# data1 = []
+# data1.append(data[0])
+# fecha = "".join(data1)
+# fecha1 = fecha.split(".")
+# fecha1.reverse()
+# print("/".join(fecha1))
 

@@ -1,4 +1,4 @@
-""" countries = [
+countries = [
     {
         "name": "Afghanistan",
         "capital": "Kabul",
@@ -39,7 +39,7 @@
         "flag": "https://restcountries.eu/data/asm.svg",
         "currency": "United State Dollar",
     },
-] """
+]
 
 # 1. Imprimir los idiomas del país Albania.
 # print(countries[2]["languages"])
@@ -72,12 +72,12 @@
 # new_lista.append(ele + 1)
 
 # print(new_lista)
-# lo_tiene = []
-# for dicti in countries:
-# nombre = dicti["name"]
-# lista = list(nombre)
-# if lista[-1] == "s":
-# print(dicti["name"])
-# lo_tiene.append(dicti["name"])
-# print(lo_tiene)
+lo_tiene = []
+for dicti in countries:
+    nombre = dicti["name"]
+    lista = list(nombre)
+    if lista[-1] == "s":
+        print(dicti["name"])
+        lo_tiene.append(dicti["name"])
+print(lo_tiene)
 
