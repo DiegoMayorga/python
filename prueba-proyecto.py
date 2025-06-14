@@ -1,5 +1,5 @@
 items1 = {
-    "Carnes": ["Pescado", "Cerdo", "Pollo"],
+    "Carnes": {"Pescado", "Cerdo", "Pollo"},
     "Precio": 100,
 }
 items2 = {
@@ -93,7 +93,9 @@ def mostrar_carnes():
     numero = 1
     for dicti_carnes in items1:
         if items1[dicti_carnes] == items1["Carnes"]:
-            for carne in items1["Carnes"]:
+            nueva_lista = list(items1["Carnes"])
+            lista_ordenada = sorted(nueva_lista)
+            for carne in lista_ordenada:
                 print(f"{numero}. {carne} - ${precio_carnes}")
                 numero = numero + 1
 
@@ -137,11 +139,11 @@ mostrar_carnes()
 opcion1_carnes = int(input("Seleccione una opción "))
 
 if opcion1_carnes == 1:
-    print("Pescado seleccionado")
-    carnes.append("Pescado")
-elif opcion1_carnes == 2:
     print("Cerdo seleccionado")
     carnes.append("Cerdo")
+elif opcion1_carnes == 2:
+    print("Pescado seleccionado")
+    carnes.append("Pescado")
 elif opcion1_carnes == 3:
     print("Pollo seleccionado")
     carnes.append("Pollo")
@@ -152,11 +154,11 @@ mostrar_carnes()
 opcion2_carnes = int(input("Seleccione otra opción "))
 
 if opcion2_carnes == 1:
-    print("Pescado seleccionado")
-    carnes.append("Pescado")
-elif opcion2_carnes == 2:
     print("Cerdo seleccionado")
     carnes.append("Cerdo")
+elif opcion2_carnes == 2:
+    print("Pescado seleccionado")
+    carnes.append("Pescado")
 elif opcion2_carnes == 3:
     print("Pollo seleccionado")
     carnes.append("Pollo")
