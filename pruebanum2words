@@ -1,0 +1,42 @@
+def num2word(numero):
+    unidades = ["cero", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve"]
+    especiales = ["diez","once","doce","trece","catorce","quince","dieciséis","diecisiete","dieciocho","diecinueve"]
+    decenas = ["", "", "veinte", "treinta", "cuarenta", "cincuenta", "sesenta", "setenta", "ochenta", "noventa"]
+    centenas = ["", "ciento", "doscientos", "trescientos", "cuatrocientos", "quinientos", "seiscientos", "setecientos", "ochocientos", "novecientos"]
+
+    if numero < 10:
+        return unidades[numero]
+    if numero < 20:
+        return especiales[numero - 10]
+    if numero < 100:
+        dec = numero // 10
+        uni = numero % 10
+        if dec == 2 and uni > 0:
+            return "veinti" + unidades[uni]
+        if uni == 0:
+            return decenas[dec]
+        return decenas[dec] + " y " + unidades[uni]
+    if numero == 100:
+        return "cien"
+    if numero < 1000:
+        cent = numero // 100
+        resto = numero % 100
+        if resto == 0:
+            return "cien" if cent == 1 else centenas[cent]
+        return centenas[cent] + " " + num2word(resto)
+    if numero < 1000000:
+        miles = numero // 1000
+        resto = numero % 1000
+
+        if miles == 1:
+            miles_texto = "mil"
+        else:
+            miles_texto = num2word(miles) + " mil"
+        
+        if resto == 0:
+            return miles_texto
+        return miles_texto + " " + num2word(resto)
+    
+    return "El número no está dentro del rango."
+
+print(num2word(727579))
